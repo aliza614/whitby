@@ -31,7 +31,7 @@ function dcReport() {
     
     // this got complicated because of joining tables
 
-    $sqlFields = array("deceased.deceasedID","deceased.firstName","deceased.middleName","deceased.lastName","deceased.birthday","deceased.deathday","circumstances.countyOfDeath","circumstances.addressOfDeath","circumstances.valid","procedures.deathCertificates","procedures.deathCertificateStatus");
+    $sqlFields = array("deceased.deceasedID","deceased.firstName","deceased.middleName","deceased.lastName","deceased.birthday","deceased.deathday","circumstances.countyOfDeath","circumstances.cityOfDeath","circumstances.valid","procedures.deathCertificates","procedures.deathCertificateStatus");
 
     $sql = "SELECT DISTINCT ".join(',',$sqlFields)." FROM procedures LEFT JOIN (deceased) ON (deceased.deceasedID=procedures.deceasedID) RIGHT JOIN (circumstances) ON (procedures.deceasedID=circumstances.deceasedID) WHERE deceased.progress <> 'complete' AND deceased.valid=1 AND procedures.deathCertificateStatus <> 'Complete' AND procedures.valid <> 0";
   //    out($sql);
