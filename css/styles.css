@@ -1,9 +1,13 @@
-body {background-color: #6B805B;
+body {
+    background-color: #6B805B;
     background-image: url("https://www.thenaturalfuneral.com/wp-content/uploads/2018/01/IMG_4127Frostatdusk.jpg");
     font-size: 150%;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
     color: #ee5555;
 }
 
@@ -24,21 +28,24 @@ h1 {
 
 
 /* Create three equal columns that floats next to each other */
+
 .sidebar {
-  float: left;
-  width: 20%;
+    float: left;
+    width: 20%;
 }
 
+
 /* Clear floats after the columns */
+
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .main {
     overflow: auto;
-    width: 500px;
+    width: 80%;
 }
 
 .butt {
@@ -51,15 +58,17 @@ h1 {
     font-weight: bold;
 }
 
-table, th, td {
-  border: 1px solid black;
-  background-color: #f0f0c0;
+table,
+th,
+td {
+    border: 1px solid black;
+    background-color: #f0f0c0;
     color: #000000;
 }
 
 .dispKey {
     font-weight: bold;
-    color:#0000a0;
+    color: #0000a0;
 }
 
 .buttRow {
@@ -82,7 +91,7 @@ table, th, td {
 
 .formbr {
     line-height: 25px;
-} 
+}
 
 .collect {
     background-color: #f0f0c0;
@@ -97,6 +106,7 @@ table, th, td {
 .staff table {
     padding-left: 150px;
 }
+
 .staffPhoto {
     position: absolute;
     left: 0px;

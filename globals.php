@@ -8,9 +8,9 @@ $logo = "https://www.thenaturalfuneral.com/wp-content/uploads/2018/03/TNF_2LineL
 
 
 // DATABASE
-$servername = "localhost";
-$username = "tnf_admin";
-$password = "tnfTeam7yaya";
+$servername = "127.0.0.1";
+$username = "tnf";
+$password = "tnfTeam7";
 $dbname = "tnf_whitby";
 $conn;
 
