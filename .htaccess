@@ -1,0 +1,5 @@
+AuthUserFile .htpasswd
+AuthGroupFile /dev/null
+AuthName "https://whitby.thenaturalfuneral.com/"
+AuthType Basic
+require valid-user 
