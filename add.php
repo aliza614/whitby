@@ -40,6 +40,7 @@ foreach ($_POST as $k=>$v) {
 if (count($cols) > 1) {
     $sql="INSERT INTO $table (".join(",",$cols).") VALUES (".join(",",$vals).")";
 
+    debug_to_console($vals);
     if ( $conn->query($sql)) {
         if ($table == 'pointOfContact') {
             $pid = getLastID();
@@ -47,7 +48,7 @@ if (count($cols) > 1) {
             $conn->query($sql);
         }
     } else {
-        getOut("SQL FAILED $sql");
+        getOut("SQL FAILED $sql"); 
     }
 } else {
     out("Nothing to Add");
